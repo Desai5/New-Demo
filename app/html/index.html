@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Destiny2" content="Best game.">
+    <title>Destiny 2 AJAX Example</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Sidebar with Links -->
+    <div class="sidebar">
+        <img class="logo"
+            src="https://image.api.playstation.com/vulcan/img/rnd/202011/0400/3PetyfDv6TpzxVQtBKYnWq8o.png"
+            alt="Game Logo">
+        <a href="#instagram">
+            <img src="https://1000logos.net/wp-content/uploads/2017/02/insta-logo.png" alt="Instagram Logo"
+                class="icon">Instagram
+        </a>
+        <a href="#inbox">
+            <img src="https://media.istockphoto.com/id/1269374586/vector/mail-vector-icon-isolated-on-white-background-outline-thin-line-mail-icon-for-website-design.jpg?s=612x612&w=0&k=20&c=sjRAUI_Q07jJaItdD3ESSQXKp8DX1GEbChLreckIaEY="
+                alt="Inbox Logo" class="icon">Inbox
+        </a>
+        <a href="#gameplay">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQhg8QAy9uGKpsW7Qs-PIXXIUH5d67hR-XGg&s"
+                alt="Gameplay Logo" class="icon">Gameplay
+        </a>
+        <a href="#play-now">
+            <img src="https://blogs.nvidia.com/wp-content/uploads/2021/02/GFN.png" alt="Play Now Logo" class="icon">Play
+            Now!
+        </a>
+    </div>
+
+    <!-- Header Content with Image and Overlay -->
+    <div class="header-content">
+        <img src="img/destiny2.jpg" alt="Game Banner" class="header-image" width="1000">
+        <div class="overlay-text">
+            <h3>Destiny 2.</h3>
+        </div>
+    </div>
+
+    <!-- Navbar with AJAX Button Links -->
+    <nav class="navbar">
+        <ul>
+            <li id="character-classes-btn">Character and Ability</li>
+            <li id="maps-btn">Maps</li>
+        </ul>
+    </nav>
+
+    <!-- Dynamic Content Area for AJAX Example -->
+    <div id="content">
+        <div class="ajax_content">
+            <p>Get Weapons as HTML</p>
+            <input id="weekdaysHTML" type="button" value="Show"/>
+            <input class="clear" type="button" value="Clear"/>
+            <div class="ajax-stuff" id="weekdays-html"></div>
+        </div>
+        <div class="ajax_content">
+            <p>Get Weekdays as JSON</p>
+            <input id="weekdaysJSON" type="button" value="Show"/>
+            <input class="clear" type="button" value="Clear"/>
+            <div class="ajax-stuff" id="weekdays-json"></div>
+        </div>
+        <div class="ajax_content">
+            <p>Get Google Map Marker data (JSON)</p>
+            <input id="marker" type="button" value="Show"/>
+            <input class="clear" type="button" value="Clear"/>
+            <div class="ajax-stuff" id="marker-data"></div>
+        </div>
+    </div>
+
+    <!-- Subscription Form Section -->
+    <section class="subscribe-section">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form action="/subscribe" method="POST">
+            <label for="subscribe">Sign up for the latest updates:</label>
+            <input type="email" id="subscribe" name="subscribe" placeholder="Enter your email address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Container for AJAX Content Insertion -->
+    <div class="container">
+        <!-- The weapons and maps tables will be injected here -->
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Game Class Overview. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/client.js" defer></script>
+    <script src="index.js" defer></script>
+</body>
+
+</html>
